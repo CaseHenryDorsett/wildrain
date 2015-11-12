@@ -1,2 +1,2 @@
-# wildrain
-WildRain - the FAST protocol test data generator.
+# WildRain
+The FAST protocol test data generator.
