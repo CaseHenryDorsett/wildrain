@@ -25,14 +25,14 @@ import math
 # Internal procedures.
 # ---------------------------------------------------------------------
 proc starting() =
-  echo("WaildRain  Copyright (C) 2015  Ivan Kokhan")
+  echo("WildRain  Copyright (C) 2015  Ivan Kokhan")
   echo("This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.")
   echo("This is free software, and you are welcome to redistribute it")
   echo("under certain conditions; type `show c' for details.\n")
   echo("HS-Test Start!")
 
 proc ending() =
-  echo("WaildRain Stop!")
+  echo("WildRain Stop!")
 
 # ---------------------------------------------------------------------
 # Main procedure.
