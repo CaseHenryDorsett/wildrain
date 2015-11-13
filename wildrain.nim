@@ -1,6 +1,5 @@
-# ---------------------------------------------------------------------
 #  WildRain - The FAST protocol test data generator.
-#  Copyright (C) 2015  Ivan Kokhan
+#  Copyright (C) 2015  Case Henry Dorsett  Tessier-Ashpool SA
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -14,30 +13,21 @@
 #
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-# ---------------------------------------------------------------------
 
-# ---------------------------------------------------------------------
-# Import Lib.
-# ---------------------------------------------------------------------
-import math
+import times, math
 
-# ---------------------------------------------------------------------
-# Internal procedures.
-# ---------------------------------------------------------------------
 proc starting() =
-  echo("WildRain  Copyright (C) 2015  Ivan Kokhan")
-  echo("This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.")
-  echo("This is free software, and you are welcome to redistribute it")
-  echo("under certain conditions; type `show c' for details.\n")
-  echo("HS-Test Start!")
+  echo "WildRain  Copyright (C) 2015  Case Henry Dorsett  Tessier-Ashpool SA"
+  echo "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
+  echo "This is free software, and you are welcome to redistribute it"
+  echo "under certain conditions; type `show c' for details.\n"
+
+  echo "[WILDRAIN]  ", format(getLocalTime(getTime()), "yyyy-MM-dd HH:mm:ss"), "  Application Start!"
 
 proc ending() =
-  echo("WildRain Stop!")
+  echo "[WILDRAIN]  ", format(getLocalTime(getTime()), "yyyy-MM-dd HH:mm:ss"), "  Application Stop!"
 
-# ---------------------------------------------------------------------
-# Main procedure.
-# ---------------------------------------------------------------------
-proc main() =
+when isMainModule:
   const
     min: int = 0
     max: int = 441000
@@ -63,14 +53,12 @@ proc main() =
     vector[i] = b
 
   for i in min..max:
-    echo(vector[i])
+    echo vector[i]
 
   ending()
 
-# ---------------------------------------------------------------------
-# Program.
-# ---------------------------------------------------------------------
-main()
+
+
 
 
 
